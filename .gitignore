@@ -3,4 +3,5 @@
 *.log
 .DS_Store
 weibopay.egg-info
+weibopay.db
 

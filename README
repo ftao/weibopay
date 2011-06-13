@@ -1,1 +1,9 @@
 pay with weibo service in order to demo the ezengage service
+
+1. Home page, app introduction
+2. Create product page
+3. Product View Page
+4. weibo authenciate page
+5. Do Payment , send the tweet
+6. Payment Success Page, rediect to download url
+

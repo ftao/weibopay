@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+<h1>购买按钮已生成</h1>
+<div>
+  <h3>请复制下面的代码来加入到你的网站。</h3>
+  <textarea rows="5" cols="80" style="width:500px;height:30px;">{{object.get_pay_button_html}}</textarea>
+  <h3>预览</h3>
+  <div>
+  {{object.get_pay_button_html|safe}}
+  </div>
+</div>
+ 
+{% endblock %}

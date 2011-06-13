@@ -1,0 +1,322 @@
+#header {
+    height: 60px;
+    line-height: 60px;
+    font-size: 16px;
+    padding: 20px;
+    background: #99C8F2;
+    margin-bottom: 1em;
+}
+
+#header .menu a {
+    padding: 5px 10px;
+    color: #004250;
+    background: #BCDBF7;
+    text-decoration: none;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#header .menu a:hover {
+    color: #678f97;
+}
+#header .menu a.highlight {
+    background: #fff;
+}
+
+
+#footer {
+    border-top: 5px solid #92C0E9;
+    background-color: #99C8F2;
+    color: white;
+    font-size: 0.9em;
+    font-weight: bold;
+    padding: 10px 0 20px 0;
+}
+
+
+.rounded-5 {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px
+}
+
+.cornered-bottom {
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    -moz-border-radius-bottomright: 0px;
+    -moz-border-radius-bottomleft: 0px;
+    -webkit-border-bottom-right-radius: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+}
+
+
+ul.vertical, ul.horizontal {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+ul.vertical a, ul.horizontal a{
+    text-decoration:none;
+}
+
+ul.horizontal li {
+    float: left;
+    margin-right: 10px;
+}
+
+ul.errorlist {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+ul.errorlist li {
+    padding:0.8em;margin-bottom:1em;border:2px solid #ddd;
+    background:#fbe3e4;color:#8a1f11;border-color:#fbc2c4;
+}
+
+
+.form-a div.field-wrapper {
+    margin:5px 0 10px 0;
+}
+.form-a div.field-wrapper label {
+    display:block;
+    font-size:large;
+}
+.form-a div.field-wrapper span.tip {
+    display:block;
+    font-size:12px;
+}
+
+.form-b div.field-wrapper {
+    margin:5px 0 10px 0;
+}
+.form-b div.field-wrapper label {
+    display:block;
+    font-size:large;
+}
+.form-b div.field-wrapper input[type='text'] {
+    width:200px;
+}
+
+.form-b div.field-wrapper span.tip {
+    display:block;
+    font-size:12px;
+}
+
+
+#content-top {
+    margin-bottom:10px;
+}
+#content-main {
+    background:#fff;
+    margin-bottom:30px;
+    padding:20px;
+}
+
+
+/* ezengage stuff*/
+body {
+    background: #E5E9ED;
+}
+#home-ad {
+    background:white;
+    padding:5px;
+}
+
+#home-ad h1 {
+    text-align:center;
+    margin-top:15px;
+}
+#home-provider-list {
+    width:350px;
+    margin:auto;
+}
+#home-provider-list li {
+    width:150px;
+    height:30px;
+    text-align:center;
+    background-image:url(../../img/provider_logos_2.png);
+    background-repeat:none;
+    text-indent:-999em;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+#home-provider-list li.pro-sinaweibo {
+    background-position:0 0;
+}
+#home-provider-list li.pro-renren {
+    background-position:0 -30px;
+}
+#home-provider-list li.pro-tencentweibo {
+    background-position:0 -60px;
+}
+#home-provider-list li.pro-neteaseweibo {
+    background-position:0 -90px;
+}
+#home-provider-list li.pro-sohuweibo{
+    background-position:0 -120px;
+}
+#home-provider-list li.pro-douban{
+    background-position:0 -150px;
+}
+#home-provider-list li.pro-qzone{
+    background-position:0 -180px;
+}
+
+#home-cms-list li {
+    text-indent:-999em;
+}
+
+#home-cms-list li.cms-wordpress {
+   width:176px;
+   height:80px;
+   background-image:url(../../img/cms/wordpress-logo.png);
+   background-repeat:none;
+   background-position:0 -30px;
+   margin-top:-20px;
+}
+#home-cms-list li.cms-discuzx {
+   width:200px;
+   height:59px;
+   background-image:url(../../img/cms/discuzx-logo.png);
+   background-repeat:none;
+}
+#home-cms-list li.cms-phpwind {
+   width:198px;
+   height:80px;
+   background-image:url(../../img/cms/phpwind-logo.png);
+   background-repeat:none;
+}
+
+#home-signup {
+    text-align:center;
+}
+#home-signup p{
+    font-size:22px;
+    line-height:30px;
+    margin:15px 0 15px 0;
+}
+
+
+.big input[type="submit"], .big input[type="button"], .big a.button {
+    width: 150px;
+    padding: 8px 0px;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    color: #333;
+    text-shadow: 1px 1px 0 white;
+    text-decoration: none;
+    border: 1px solid #DDD;
+    background: #EEE;
+    cursor: pointer;
+}
+.big a.button {
+    line-height: 16px;
+    padding: 8px 20px 7px 20px;
+}
+
+.big input[type="submit"]:hover, .big input[type="button"]:hover, .big .button:hover {
+    background: #A1E6F9;
+    text-shadow: none;
+    color: #001c2d;
+}
+.big input[readonly="readonly"], .big input[readonly="readonly"]:focus {
+    background: #f2fcfe;
+    padding: 6px 5px;
+    border: 1px solid #e2ebed;
+}
+
+
+.big-button {
+    color: #FFF1F2;
+    background: #F04C38;
+    border: 3px solid #AA0332;
+    font-size: 22px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}
+.big-button:hover {
+    color: #FFF1F2;
+}
+
+#content-top .big-button {
+    line-height: 2em;
+    text-shadow: -1px -1px 0 #A73426;
+    border: 0;
+}
+
+#home-ad .big-button {
+    width: 240px;
+    margin: 15px auto 5px auto;
+    line-height: 2em;
+    background: #F04C38;
+    text-shadow: -1px -1px 0 #A73426;
+    border: 0;
+}
+
+
+#home-features {
+    margin-top:20px;
+}
+ul.features {
+    list-style: none;
+    margin: 0 0 0 20px;
+}
+ul.features li {
+    min-height: 80px;
+}
+ul.features li h3 {
+    font-size: 1.3em;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #0D2246;
+    margin-bottom: 2px;
+}
+
+ul.vtab-menu li {
+    line-height:30px;
+    padding-left:10px;
+    margin:5px 0px;
+}
+ul.vtab-menu li a {
+    text-decoration:none;
+}
+ul.menu li.active {
+    background:#E7E9EC;
+}
+
+
+/* buzz page */
+ul#buzz-list li {
+    width:280px;
+    text-align:center;
+    padding:5px;
+    border:1px solid #ccc;
+    float:left;
+    vertical-align:middle;
+    margin:10px 10px;
+}
+
+ul#buzz-list li.site-with-logo {
+    height:140px;
+}
+
+ul#buzz-list li.site-with-logo a{
+    display:block;
+    height:110px;
+}
+
+ul#buzz-list li.site-with-logo span{
+    display:block;
+}
+
+/* feedback fix */
+

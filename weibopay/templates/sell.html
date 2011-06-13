@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+<h1>创建购买按钮</h1>
+
+<div>
+  <form method="post" class="form-b big">
+    {% csrf_token %}
+    {% include "include/form_snippet.html" %}
+    <div class="field-wrapper">
+      <input type="submit" class="button rounded-5" value="提交"/>
+    </div>
+  </form>
+</div>
+{% endblock %}
