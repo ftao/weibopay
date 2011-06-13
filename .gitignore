@@ -1,0 +1,6 @@
+*.pyc
+.*.swp
+*.log
+.DS_Store
+weibopay.egg-info
+
