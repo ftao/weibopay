@@ -1,5 +1,10 @@
 #!/usr/bin/env python
 import os
+staticlink = os.path.join('static')
+if os.path.islink(staticlink):
+    os.unlink(staticlink)
+os.symlink('weibopay/static', staticlink)
+
 # To import anything under django.*, we must set this variable.
 os.environ['DJANGO_SETTINGS_MODULE'] = 'weibopay.settings'
 # Import the admin module. The media directory is right under it!
@@ -9,6 +14,7 @@ admindir = os.path.dirname(django.contrib.admin.__file__)
 # Add /media behind it.
 mediadir = os.path.join(admindir, 'media')
 # Compute the path of the symlink under the static directory.
+
 staticlink = os.path.join('static', 'admin_media')
 # If the link already exists, delete it.
 if os.path.islink(staticlink):
