@@ -20,12 +20,16 @@ urlpatterns = patterns('',
         {'queryset' : Product.objects.all(), 'template_name': 'product.html'},
         name='product_detail'),
 
-    url(r'^product/(?P<object_id>\d+)/pay/$', object_detail,
-        {'queryset' : Product.objects.all(), 'template_name': 'pay.html'},
+    url(r'^product/(?P<product_id>\d+)/pay/$', 'shop.views.pay',
+        {'template_name': 'pay.html'},
         name='pay'),
+    url(r'^product/(?P<product_id>\d+)/do_pay/$', 'shop.views.do_pay',
+        {'template_name': 'do_pay.html'},
+        name='do_pay'),
+ 
     #(r'^pay/(?P<object_id>\d+)/done/$', object_detail, {'template': 'pay_done.html',}),
 
-    # (r'^weibopay/', include('weibopay.foo.urls')),
+    (r'^eze/', include('eze_auth.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     # (r'^admin/doc/', include('django.contrib.admindocs.urls')),

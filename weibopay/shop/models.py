@@ -3,7 +3,6 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.contrib.sites.models import Site
 
-
 class Product(models.Model):
     
     seller_name = models.CharField("Name", max_length=100, help_text="Your Name")

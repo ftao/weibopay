@@ -1,0 +1,20 @@
+{% extends "popup.html" %}
+
+{% block main_content %}
+<h1>{{product.filename}}</h1>
+
+<p>
+用{{identity.provider_name}}账号{{identity.preferred_username}} 发表一条微博就可立刻免费获取。
+</p>
+
+<p>
+  <form class="form-b big" method="post">
+    {% csrf_token %}
+    {% include "include/form_snippet.html" %}
+    <div class="field-wrapper">
+      <input type="submit" class="button rounded-5" value="发送"/>
+    </div>
+  </form>
+</p>
+ 
+{% endblock %}

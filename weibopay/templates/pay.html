@@ -1,7 +1,7 @@
 {% extends "popup.html" %}
 
 {% block main_content %}
-<h1>{{object.filename}}</h1>
+<h1>{{product.filename}}</h1>
 
 <p>
 只需发表一条微博就可立刻免费获取。
@@ -9,6 +9,8 @@
 
 <p>
   使用新浪微博登录。
+  {% load eze_tags %}
+  {% eze_login_widget login_redirect %}
 </p>
  
 {% endblock %}

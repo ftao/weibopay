@@ -1,5 +1,5 @@
 # Django settings for weibopay project.
-import os
+import os 
 HERE = os.path.dirname(__file__)
 
 DEBUG = True
@@ -29,11 +29,11 @@ DATABASES = {
 # timezone as the operating system.
 # If running in a Windows environment this must be set to the same as your
 # system time zone.
-TIME_ZONE = 'America/Chicago'
+TIME_ZONE = 'Asia/Shanghai'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'zh-cn'
 
 SITE_ID = 1
 
@@ -96,5 +96,23 @@ INSTALLED_APPS = (
     # 'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
+    'eze_auth',
     'weibopay.shop',
 )
+
+AUTHENTICATION_BACKENDS = ( 
+    'django.contrib.auth.backends.ModelBackend',
+    'eze_auth.auth_backends.EzEngageBackend',
+)
+
+EZENGAGE_API_ROOT = 'http://api.ezengage.com/api/v1/'
+EZENGAGE_APP_DOMAIN = 'YOUR-APP-DOMAIN'
+EZENGAGE_APP_ID = 'YOUR-APP-ID'
+EZENGAGE_APP_KEY = 'YOUR-APP-KEY'
+
+#EZENGAGE_WIDGET_ROOT = 'http://login.testeze.com:8000/login/%s/widget/normal' % EZENGAGE_APP_DOMAIN
+
+try:
+    from local_settings import *
+except ImportError:
+    pass
