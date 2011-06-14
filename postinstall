@@ -21,3 +21,10 @@ if os.path.islink(staticlink):
     os.unlink(staticlink)
 # Install the correct link.
 os.symlink(mediadir, staticlink)
+
+
+settings_link = 'weibopay/local_settings.py'
+if os.path.islink(settings_link):
+    os.unlink(settings_link)
+
+os.symlink(settings_link, '/home/dotcloud/data/local_settings.py')

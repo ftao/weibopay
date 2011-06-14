@@ -1,15 +1,3 @@
 Django
 https://github.com/ezengage/django-ezengage/zipball/v0.1
-#==1.2.4
-#Django-piston
-#simplejson==2.1.3
-#flup
-#mock
-#django-email-confirmation
-#django-indexer
-#django-paging
-#django-sentry
-#django-debug-toolbar
-#django-gravatar
 #south
-#fabric
