@@ -5,4 +5,5 @@
 weibopay.egg-info
 weibopay.db
 local_settings.py
+product_local_settings.py
 
