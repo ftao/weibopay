@@ -1,5 +1,5 @@
 Django
-git+https://github.com/ezengage/django-ezengage.git#egg=django-ezengage
+https://github.com/ezengage/django-ezengage/zipball/v0.1
 #==1.2.4
 #Django-piston
 #simplejson==2.1.3
