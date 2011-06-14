@@ -20,10 +20,10 @@ urlpatterns = patterns('',
         {'queryset' : Product.objects.all(), 'template_name': 'product.html'},
         name='product_detail'),
 
-    url(r'^product/(?P<product_id>\d+)/pay/$', 'shop.views.pay',
+    url(r'^product/(?P<product_id>\d+)/pay/$', 'weibopay.shop.views.pay',
         {'template_name': 'pay.html'},
         name='pay'),
-    url(r'^product/(?P<product_id>\d+)/do_pay/$', 'shop.views.do_pay',
+    url(r'^product/(?P<product_id>\d+)/do_pay/$', 'weibopay.shop.views.do_pay',
         {'template_name': 'do_pay.html'},
         name='do_pay'),
  
