@@ -1,0 +1,10 @@
+[
+  {
+    "pk": 1, 
+    "model": "sites.site", 
+    "fields": {
+      "domain": "weibopay.ftao.dotclound.com", 
+      "name": "weibopay"
+    }
+  }
+]
