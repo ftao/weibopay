@@ -1,9 +1,9 @@
-pay with weibo service in order to demo the ezengage service
+WeiBoPay
+=================
 
-1. Home page, app introduction
-2. Create product page
-3. Product View Page
-4. weibo authenciate page
-5. Do Payment , send the tweet
-6. Payment Success Page, rediect to download url
+weibopay 是一个简单的微博支付服务。 它可以很方便的给你的产品创建一个购买按钮，让用户支付一条微博的价格来购买的你的产品。
+我们支持新浪微博和腾讯微博。
 
+项目是基于ezEngage API创建的。
+
+注意:该服务目前只是为了演示ezEngage API的使用而实现的一个实验性项目。

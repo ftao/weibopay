@@ -30,6 +30,9 @@ class Product(models.Model):
         return 'http://' + current_site.domain + self.get_absolute_url() + 'pay/'
 
 
+    def __unicode__(self):
+        return "<Product %s>" %self.pk
+
 class PurchaseRecord(models.Model):
 
     product = models.ForeignKey(Product)
@@ -37,4 +40,5 @@ class PurchaseRecord(models.Model):
     price = models.CharField(max_length=1000)
     purchase_time = models.DateTimeField(auto_now_add=True)
     
-
+    def __unicode__(self):
+        return "<PurchaseRecord product=%s user=%s>" %(self.product.pk, self.user.username)
