@@ -320,3 +320,8 @@ ul#buzz-list li.site-with-logo span{
 
 /* feedback fix */
 
+a.text-logo {
+    font-size:30px;
+    text-decoration:none;
+    color:white;
+}

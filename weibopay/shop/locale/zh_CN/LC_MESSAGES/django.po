@@ -1,0 +1,64 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-06-15 14:11+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: models.py:9
+msgid "Name"
+msgstr "名字"
+
+#: models.py:9
+msgid "Your Name"
+msgstr "你的名字"
+
+#: models.py:10
+msgid "Email"
+msgstr "电子邮件"
+
+#: models.py:10
+msgid "Your Email"
+msgstr "你的电子邮件地址"
+
+#: models.py:12
+msgid "Filename"
+msgstr "文件名"
+
+#: models.py:13
+msgid "This is the name that appears as the descriptive name of your file."
+msgstr "这将作为你的文件的描述性的文字"
+
+#: models.py:14
+msgid "Download URL"
+msgstr "下载地址"
+
+#: models.py:15
+msgid "Please enter the direct URL to the file you want to sell. "
+msgstr "请输入你要销售的文件的直接下载地址"
+
+#: models.py:17
+msgid "Tweet Text"
+msgstr "微博内容"
+
+#: models.py:18
+msgid "Enter the text of the Tweet you want the people to post."
+msgstr "请输入你希望人们发表的微博的内容，请保持在100个字以内"
+
+#: models.py:19
+msgid "Tweet URL"
+msgstr "微博链接"
+
+#: models.py:20
+msgid "Enter the URL that will be attached to every Tweet the people post."
+msgstr "请输入添加在每条发表的微博里面的URL，请保持在30个字符以内"

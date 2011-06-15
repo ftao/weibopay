@@ -1,22 +1,23 @@
-#coding=utf8
+#coding=utf-8
 from django.db import models
 from django.contrib.auth.models import User
 from django.contrib.sites.models import Site
+from django.utils.translation import ugettext_lazy as _
 
 class Product(models.Model):
     
-    seller_name = models.CharField("Name", max_length=100, help_text="Your Name")
-    seller_email = models.EmailField("Email", max_length=100, help_text="Your Email")
+    seller_name = models.CharField(_("Name"), max_length=100, help_text=_("Your Name"))
+    seller_email = models.EmailField(_("Email"), max_length=100, help_text=_("Your Email"))
 
-    filename = models.CharField("Filename", max_length=1000,
-                                help_text="This is the name that appears as the descriptive name of your file.")
-    download_url = models.URLField("Download URL", verify_exists=False,
-                                    help_text="Please enter the direct URL to the file you want to sell. ")
+    filename = models.CharField(_("Filename"), max_length=1000,
+                                help_text=_("This is the name that appears as the descriptive name of your file."))
+    download_url = models.URLField(_("Download URL"), verify_exists=False,
+                                    help_text=_("Please enter the direct URL to the file you want to sell. "))
 
-    tweet_body = models.TextField("Tweet Text", max_length=500,
-                                  help_text="Enter the text of the Tweet you want the people to post.")
-    tweet_url = models.URLField("Tweet URL", verify_exists=False,
-                                help_text="Enter the URL that will be attached to every Tweet the people post.")
+    tweet_body = models.TextField(_("Tweet Text"), max_length=500,
+                                  help_text=_("Enter the text of the Tweet you want the people to post."))
+    tweet_url = models.URLField(_("Tweet URL"), verify_exists=False,
+                                help_text=_("Enter the URL that will be attached to every Tweet the people post."))
 
     def get_absolute_url(self):
         return '/product/%d/' %self.pk

@@ -1,5 +1,22 @@
 {% extends "base.html" %}
 
 {% block main_content %}
-<h1>以一条微博的代价出售你的产品</h1>
+<h1>weibopay - 以一条微博的价格出售你的产品</h1>
+
+<p>
+weibopay 是一个简单的微博支付服务。
+它可以很方便的给你的产品创建一个购买按钮，让用户支付一条微博的价格来购买的你的产品。
+我们支持新浪微博和腾讯微博。
+</p>
+
+<p>
+<a href="{% url sell %}" class="big-button span-7 rounded-5 button">立刻创建创建购买按钮</a>
+</p>
+
+<div class="clear"></div>
+
+<p class="notice" style="margin-top:20px;">
+注意:该服务目前只是为了演示<a href="http://ezengage.com/">ezEngage</a> API的使用而实现的一个实验性项目。
+</p>
+
 {% endblock %}
